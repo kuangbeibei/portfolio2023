@@ -17,6 +17,7 @@ module.exports = {
         activeColor: "var(--activeColor)",
         bgOpacityColor: "var(--bgOpacityColor)",
         drawerBg: "var(--white)",
+        lightBg: "var(--lightBg)",
       },
     },
   },

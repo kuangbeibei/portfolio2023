@@ -3,12 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --primaryColor: #233554;
+  --bg: #0a192f;
+  --lightBg: #112240;
   --activeColor: #9e98f5;
+  --primaryColor: #ccd6f6;
   --bgOpacityColor: rgba(0, 0, 0, 0.2);
   --white: #ffffff;
 }
 
 body {
-  /* background-color: var(--bg); */
+  background-color: var(--bg);
 }

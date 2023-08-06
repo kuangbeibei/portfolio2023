@@ -19,7 +19,7 @@ export const Drawer = ({ open }: DrawerProps) => {
           }`}
         ></div>
         <aside
-          className={`absolute top-0 right-0 w-3/4 backdrop-blur-sm bg-white/90 flex items-center justify-center h-screen transition duration-400 linear ${
+          className={`absolute top-0 right-0 w-3/4 backdrop-blur-sm bg-lightBg flex items-center justify-center h-screen transition duration-400 linear ${
             open ? "translate-x-0" : "translate-x-[100%]"
           }`}
         >
