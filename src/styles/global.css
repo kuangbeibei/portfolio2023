@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primaryColor: #233554;
+  --activeColor: #9e98f5;
+  --bgOpacityColor: rgba(0, 0, 0, 0.2);
+  --white: #ffffff;
+}
+
+body {
+  /* background-color: var(--bg); */
+}
