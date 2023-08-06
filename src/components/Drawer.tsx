@@ -12,22 +12,20 @@ export const Drawer = ({ open }: DrawerProps) => {
 
   if (!isSSR) {
     return createPortal(
-      <aside
-        className={`fixed top-0 left-0 right-0 w-screen h-screen ${
-          open ? "translate-x-0" : "translate-x-[100%]"
-        }`}
-      >
-        <div className="absolute top-0 left-0 z-5 w-full h-full backdrop-blur-[1px] bg-bgOpacityColor"></div>
+      <section className="block md:hidden">
         <div
-          className={`absolute top-0 right-0 w-3/4 flex items-center justify-center bg-drawerBg h-screen transition delay-200 duration-400 linear ${
+          className={`absolute top-0 left-0 z-5 w-full h-full ${
+            open ? "backdrop-blur-[1px] bg-bgOpacityColor" : ""
+          }`}
+        ></div>
+        <aside
+          className={`absolute top-0 right-0 w-3/4 backdrop-blur-sm bg-white/90 flex items-center justify-center h-screen transition duration-400 linear ${
             open ? "translate-x-0" : "translate-x-[100%]"
           }`}
         >
-          <div className="">
-            <Nav />
-          </div>
-        </div>
-      </aside>,
+          <Nav />
+        </aside>
+      </section>,
       document.body
     );
   }
